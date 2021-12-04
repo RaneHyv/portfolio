@@ -26,6 +26,22 @@ This should be okay for a simple download section.
 
 ## Implementation
 
+### Google Analytics Setup
+Inital Setup / Tryout:
+1. Created the following:
+  - New account
+  - New Property
+  - Select what sort of tracking to use
+
+
+2. Copied property's Global site tag
+3. Paste it to website
+4. Push code to cloud to update site
+5. Wait for update and visit site with "fresh" browser
+
+Result:
+![inital-analytics-setup](/assets/initial-js-result.png)
+
 ### Website Download Section
 Code:
 ![html-code](/assets/download-code.png)
