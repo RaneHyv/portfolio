@@ -1,25 +1,40 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS, Custom CSS & Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Tab Settings -->
-    <title>Portfolio | Rane Hyvönen!</title>
-    <link rel="icon" href="./assets/rh-icon.png" type='image/x-icon'>
-  </head>
+  <!-- Bootstrap CSS, Icons, Custom CSS & JS Plugins + Popper-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./index.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <!-- Body -->
-  <body class="d-flex h-100 text-center text-white bg-dark" data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <div id="content-container" class="content-container">
-    
+  <!-- Tab Settings -->
+  <title>Portfolio | Rane Hyvönen!</title>
+  <link rel="icon" href="./assets/rh-icon.png" type='image/x-icon'>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNMSPRRTQZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XNMSPRRTQZ');
+  </script>
+</head>
+
+<!-- Body -->
+
+<body class="d-flex h-100 text-center text-white bg-dark" data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
+  <div id="content-container" class="content-container">
+
     <!-- Header/Navbar -->
     <header class="mb-auto">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
@@ -31,7 +46,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link"  aria-current="page" href="#content-container">Cover</a>
+                <a class="nav-link" aria-current="page" href="#content-container">Cover</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#about-anchor">About</a>
@@ -48,92 +63,166 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#certification-anchor">Certifications</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#resume-anchor">Resume</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    
+
     <main class="px-3">
       <!-- Cover -->
       <div id="cover-container" class="cover-container">
         <h1>Hi, I'm Rane.</h1>
         <img src="./assets/cover-image_1000x1000.jpg" class="rounded-circle" alt="cover-image">
-        <p id="cover-text"class="lead">I'm a young software developer student. I have a goal to make impactful software with practical design.
+        <p id="cover-text" class="lead">I'm a young software developer student. I have a goal to make impactful software with practical design.
         </p>
         <div id="social" class="row">
-            <ul class="social-network social-circle">
-              <li><a href="https://www.linkedin.com/in/ranehyvonen/" class="icoLinkedin" title="Linkedin"><i class="bi-linkedin"></i></i></a></li>
-              <li><a href="https://gitlab.com/users/rainern_/projects" class="icoGitlab" title="Gitlab"><i class="bi-github"></i></a></li>
-              <li><a href="mailto:ranehyvonen@kamk.fi" class="icoEmail" title="Email"><i class="bi-envelope-fill"></i></a></li>
-            </ul>
+          <ul class="social-network social-circle">
+            <li><a href="https://www.linkedin.com/in/ranehyvonen/" class="icoLinkedin" title="Linkedin"><i class="bi-linkedin"></i></i></a></li>
+            <li><a href="https://gitlab.com/users/rainern_/projects" class="icoGitlab" title="Gitlab"><i class="bi-github"></i></a></li>
+            <li><a href="mailto:ranehyvonen@kamk.fi" class="icoEmail" title="Email"><i class="bi-envelope-fill"></i></a></li>
+          </ul>
         </div>
       </div>
+    </main>
 
     <!-- About -->
-    <section class="about-mf sect-pt4 route">
-        <div id="about" class="about-container">
+    <section class="px-3 about-mf sect-pt4 route">
+      <div id="about" class="about-container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <a class="anchor" id="about-anchor"></a>
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      Hello! My name is Rane and I enjoy exploring and learning about new technologies and hardware. My interest in
+                      software development started 6 years ago in Vocational College by learning very basic C/C++ with Borland. From
+                      that point onwards I slowly started to learn more languages and started to enjoy programming more and more.
+                      A combination of interests in hardware, smart solutions and programming led me to enroll at Kajaani University of Applied Sciences
+                      in the <a href="#education-anchor">Intelligent Systems sector</a>.
+                    </p>
+                    <p class="lead">
+                      Personally, I value attention to detail in any work. The phrase "Function over form" is quite close to my personal
+                      goals in software design. It is nice to have sites and software that looks pretty but it has to work for every device
+                      as intended. Otherwise, what is the point?
+                    </p>
+                  </div>
+                </div>
+                <div id="skills" class="col-md-6">
+                  <div class="skill-mf">
+                    <a class="anchor" id="skills-anchor"></a>
+                    <h5 class="title-s">Skill</h5>
+                    <span>HTML</span> <span class="pull-right"></span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>CSS</span> <span class="pull-right"></span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>PHP</span> <span class="pull-right"></span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>JAVASCRIPT</span> <span class="pull-right"></span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>C / C++</span> <span class="pull-right"></span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>PYTHON</span> <span class="pull-right"></span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>JAVA</span> <span class="pull-right"></span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>KOTLIN</span> <span class="pull-right"></span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Education -->
+    <section id="experience" class="Experience-mf">
+      <div class="experence-container">
+        <div id="education" class="education-container">
+          <a class="anchor" id="education-anchor"></a>
+          <h2>Education</h2>
           <div class="row">
             <div class="col-sm-12">
               <div class="box-shadow-full">
                 <div class="row">
                   <div class="col-md-6">
-                    <div class="about-me pt-4 pt-md-0">
-                      <div class="title-box-2">
-                        <a class="anchor" id="about-anchor"></a>
-                        <h5 class="title-left">
-                          About me
-                        </h5>
+                    <div class="edu-right-mf">
+                      <div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <a href="https://www.kamk.fi/en"><img src="./assets/kamk-logo.png" class="img-fluid rounded-start" alt="KAMK-logo"></a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Kajaani University of Applied Sciences (KAMK)</h5>
+                              <p class="card-text">
+                                <b>Intelligent systems</b>
+                              </p>
+                              <p>
+                                A training that specializes in device design and device-based programming.
+                                The main focus of the studies is on the design and implementation of intelligent systems electronics,
+                                telecommunications, databases and user interfaces. In education, the application areas of intelligent systems
+                                are e.g. well-being, exercise, games, smart environments and industry. An engineer who has graduated
+                                is an expert who is able to apply his or her skills in hardware and software design tasks in various fields, including the gaming industry.
+                              </p>
+                              <p class="card-text"><small class="text-muted">Bachelor’s Degree: 2018 - Ongoing</small></p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <p class="lead">
-                        Hello! My name is Rane and I enjoy exploring and learning about new technologies and hardware. My interest in 
-                        software development started 6 years ago in Vocational College by learning very basic C/C++ with Borland. From 
-                        that point onwards I slowly started to learn more languages and started to enjoy programming more and more. 
-                        A combination of interests in hardware, smart solutions and programming led me to enroll at Kajaani University of Applied Sciences 
-                        in the <a href="#education-anchor">Intelligent Systems sector</a>.
-                      </p>
-                      <p class="lead">
-                        Personally, I value attention to detail in any work. The phrase "Function over form" is quite close to my personal 
-                        goals in software design. It is nice to have sites and software that looks pretty but it has to work for every device 
-                        as intended. Otherwise, what is the point? 
-                      </p>
                     </div>
                   </div>
-                  <div id="skills" class="col-md-6">
-                    <div class="skill-mf">
-                      <a class="anchor" id="skills-anchor"></a>
-                      <h5 class="title-s">Skill</h5>
-                      <span>HTML</span> <span class="pull-right"></span>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <span>CSS</span> <span class="pull-right"></span>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <span>PHP</span> <span class="pull-right"></span>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <span>JAVASCRIPT</span> <span class="pull-right"></span>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <span>C / C++</span> <span class="pull-right"></span>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <span>PYTHON</span> <span class="pull-right"></span>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <span>JAVA</span> <span class="pull-right"></span>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <span>KOTLIN</span> <span class="pull-right"></span>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="col-md-6">
+                    <div class="edu-left-mf">
+                      <div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <a href="https://www.kao.fi/"><img src="./assets/kao-icon.jpg" class="img-fluid rounded-start" alt="..."></a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Kainuu Vocational College (KAO), Kajaani</h5>
+                              <p class="card-text">
+                                <b>Information and Communications Technology</b>
+                              </p>
+                              <p>
+                                ICT technician is able to perform the installation, commissioning, programming,
+                                configuration and maintenance of computer and communication equipment. In addition,
+                                he is competent in testing, maintenance, repair and commissioning of electronic equipment.
+                              </p>
+                              <p class="card-text"><small class="text-muted">Vocational qualification: 2014-2017</small></p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -142,90 +231,24 @@
             </div>
           </div>
         </div>
-      </section>
 
-
-      <!-- Education -->
-      <section id="experience" class="Experience-mf">
-        <div class="experence-container">
-          <div id="education" class="education-container">
-            <a class="anchor" id="education-anchor"></a>
-            <h2>Education</h2>
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="box-shadow-full">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="edu-right-mf">
-                        <div class="card mb-3">
-                          <div class="row g-0">
-                            <div class="col-md-4">
-                              <a href="https://www.kamk.fi/en"><img src="./assets/kamk-logo.png" class="img-fluid rounded-start" alt="KAMK-logo"></a>
-                            </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Kajaani University of Applied Sciences (KAMK)</h5>
-                                <p class="card-text">
-                                  <b>Intelligent systems</b></p>
-                                  <p>
-                                  A training that specializes in device design and device-based programming. 
-                                  The main focus of the studies is on the design and implementation of intelligent systems electronics, 
-                                  telecommunications, databases and user interfaces. In education, the application areas of intelligent systems 
-                                  are e.g. well-being, exercise, games, smart environments and industry. An engineer who has graduated 
-                                  is an expert who is able to apply his or her skills in hardware and software design tasks in various fields, including the gaming industry.
-                                </p>
-                                <p class="card-text"><small class="text-muted">Bachelor’s Degree: 2018 - Ongoing</small></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="edu-left-mf">
-                        <div class="card mb-3">
-                          <div class="row g-0">
-                            <div class="col-md-4">
-                              <a href="https://www.kao.fi/"><img src="./assets/kao-icon.jpg" class="img-fluid rounded-start" alt="..."></a>
-                            </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Kainuu Vocational College (KAO), Kajaani</h5>
-                                <p class="card-text">
-                                  <b>Information and Communications Technology</b></p>
-                                  <p>
-                                  ICT technician is able to perform the installation, commissioning, programming, 
-                                  configuration and maintenance of computer and communication equipment. In addition, 
-                                  he is competent in testing, maintenance, repair and commissioning of electronic equipment.
-                                </p>
-                                <p class="card-text"><small class="text-muted">Vocational qualification: 2014-2017</small></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Work Experience -->
-          <div id="work-container" class="work-container">
-            <a class="anchor" id="work-anchor"></a>
-            <h2>Work Experience</h2>
+        <!-- Work Experience -->
+        <div id="work-container" class="work-container">
+          <a class="anchor" id="work-anchor"></a>
+          <h2>Work Experience</h2>
           <div class="timeline">
             <div class="timeline-row">
               <div class="timeline-time">
                 2016<small>June</small>
               </div>
               <div class="timeline-content">
-                <a href="https://www.tietomikro.com"><h4>Kainuun Tietomikro Oy</h4></a>
+                <a href="https://www.tietomikro.com">
+                  <h4>Kainuun Tietomikro Oy</h4>
+                </a>
                 <p>
-                  Kainuun Tietomikro Oy is a local computer shop in Kuhmo. 
-                  I was worked on pc repair and maintenance at hardware and software/os level. 
-                  Other responsibilitys I had were customer service, taking care of the shop, 
+                  Kainuun Tietomikro Oy is a local computer shop in Kuhmo.
+                  I was worked on pc repair and maintenance at hardware and software/os level.
+                  Other responsibilitys I had were customer service, taking care of the shop,
                   selling products and services.
                 </p>
                 <div class="tags">
@@ -235,16 +258,18 @@
                 </div>
               </div>
             </div>
-        
+
             <div class="timeline-row">
               <div class="timeline-time">
                 2015<small>June</small>
               </div>
               <div class="timeline-content">
-                <a href="https://www.videoklinikka.net"><h4>Videokliniikka Ky</h4></a>
+                <a href="https://www.videoklinikka.net">
+                  <h4>Videokliniikka Ky</h4>
+                </a>
                 <p>
-                  Videokliniikka is a local electronic appliance repair shop in Kuhmo. 
-                  I was responsible for diagnosing and repairing appliances that were brought in. 
+                  Videokliniikka is a local electronic appliance repair shop in Kuhmo.
+                  I was responsible for diagnosing and repairing appliances that were brought in.
                   Now and then I would handle customer support and help the owner as an assistant.
                 </p>
                 <div class="tags">
@@ -255,14 +280,16 @@
                 </div>
               </div>
             </div>
-        
+
             <div class="timeline-row">
               <div class="timeline-time">
                 2014<small>June</small>
               </div>
               <div class="timeline-content">
-                <a href="https://sommelo.net/en/"><h4>Sommelo</h4></a>
-                <p>Sommelo is a yearly music event in Kuhmo. I was part of the support staff before the event. 
+                <a href="https://sommelo.net/en/">
+                  <h4>Sommelo</h4>
+                </a>
+                <p>Sommelo is a yearly music event in Kuhmo. I was part of the support staff before the event.
                   Doing the actual event I worked as part of the customer support team.</p>
                 <div class="tags">
                   <span class="badge badge-pill">Customer Support</span>
@@ -272,27 +299,45 @@
             </div>
           </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Certifications -->
-      <div id="certification-container" class="certification-container">
-        <a class="anchor" id="certification-anchor"></a>
-        <h2>Certifications</h2>
-        <ol class="certification-list">
-          <li><h3>Google Analytics for Beginners</h3>Person with this certification has learned the basic features of 
-            Google Analytics including how to create an account, implement tracking code, analyze basic reports, and 
-            set up goals and campaign tracking.</li>
-          <li><h3>Advanced Google Analytics</h3>Person has knowledge and skills in Google Analytics features including data 
-            collection, processing and configuration, and more complex analysis and marketing tools.</li>
-          <li><h3>Google Tag Manager Fundamentals</h3>Person knows how to utilize Google Tag Manager and can simplify 
-            the tag implementation and management process. Made for marketers, analysts, and developers.</li>
-        </ol>
-      </div>
-    </main>
+    <!-- Certifications -->
+    <div id="certification-container" class="px-3 certification-container">
+      <a class="anchor" id="certification-anchor"></a>
+      <h2>Certifications</h2>
+      <ol class="certification-list">
+        <li>
+          <h3>Google Analytics for Beginners</h3>Person with this certification has learned the basic features of
+          Google Analytics including how to create an account, implement tracking code, analyze basic reports, and
+          set up goals and campaign tracking.
+        </li>
+        <li>
+          <h3>Advanced Google Analytics</h3>Person has knowledge and skills in Google Analytics features including data
+          collection, processing and configuration, and more complex analysis and marketing tools.
+        </li>
+        <li>
+          <h3>Google Tag Manager Fundamentals</h3>Person knows how to utilize Google Tag Manager and can simplify
+          the tag implementation and management process. Made for marketers, analysts, and developers.
+        </li>
+      </ol>
+    </div>
+
+    <div class="resume-container">
+      <a class="anchor" id="resume-anchor"></a>
+      <h2>Resume</h2>
+      <p>
+        If you are intrested you can download my resume and see other intresting facts about me.
+      </p>
+      <a href="/assets/Rane Hyvönen CV.pdf" download>
+        <button type="button" class="resume-button btn btn-primary">Download</button>
+      </a>
+    </div>
 
     <!-- Footer -->
-      <footer class="mt-auto text-white-50">
-        <p>© 2021 Rane Hyvönen</p>
-      </footer>
-    </div>
+    <footer class="mt-auto text-white-50">
+      <p>© 2021 Rane Hyvönen</p>
+    </footer>
+  </div>
+</body>
+
 </html>
