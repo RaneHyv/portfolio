@@ -42,6 +42,9 @@ Inital Setup / Tryout:
 Result:
 ![inital-analytics-setup](/assets/initial-js-result.png)
 
+Now I know the JS-plugins, popper and analythics works.
+The rest is about setuping up specific event tracking and tag manager
+
 ### Website Download Section
 Code:
 ![html-code](/assets/download-code.png)
