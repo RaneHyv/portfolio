@@ -40,7 +40,7 @@ Visual:
 +Added Resume section to Navbar
 
 ### Google Analytics Setup
-Inital Setup / Tryout:
+Initial Setup / Tryout:
 1. Created the following:
   - New account
   - New Property
@@ -53,7 +53,7 @@ Inital Setup / Tryout:
 5. Wait for update and visit site with "fresh" browser
 
 Result:
-![inital-analytics-setup](/assets/initial-js-result.png)
+![initial-analytics-setup](/assets/initial-js-result.png)
 
 Now I know the JS-plugins, popper and analytics works.
 The rest is about setting up specific event tracking and tag manager
@@ -86,7 +86,35 @@ Triggers:
 
 ![resume-download-trigger](/assets/resume-trigger.png)
 
-### Problems
+### Google Analytics View Unique Users
+There was information about how many times was resume downloaded but there was
+no smart way to see how many people downloaded.
+
+To solve this problem I went to Google Analytics Audience section to create
+custom audience of people that triggered/are part of "resume_download_github"
+event. This way you can see and compare data to all users or something else.
+Other thing I added was a event trigger "unique_resume_download_github" that
+triggers if new user is added to audience it.This allows user to see unique
+users that downloaded the resume in real time and in event reports.
+
+![audience-creation](/assets/audience-creation.png)
+
+
+You can see in the pictures below how this works:
+
+Note: These 2 pictures have a time delay from each other resulting in 2 views to
+expire seen in 1st picture (6 page_views to 4 ga_sessions_id) but the point
+stands...
+
+Realtime Events:
+
+![liveview-test](/assets/liveview-test.png)
+
+resume_download_github Session IDs:
+
+![resume-download-session-id](/assets/download-session-id.png)
+
+## Problems
 
 1. GA4 made many things learned from Google Academy "pointless". The fundamentals
 are there but many things don't work like portrayed. Maybe some old accounts still
@@ -95,6 +123,8 @@ have that old system in place but fresh accounts seem to use GA4 to my knowledge
 (refer to planning phase on views)
 3. Had a dumb mistake where the cv would not download but the issue was I forgot
 the . from  href="./"
+4. Google reports are slow to update (1-3 days) meaning the test times is low
+considering project length is 5 days and one of them is planning...
 
 
 
@@ -102,14 +132,17 @@ the . from  href="./"
 Everything shows up in Google Analytics page and resume downloads have specific
 event to show download numbers.
 
-Demograph View:
-![demograph-view](/assets/demograph-overview.png)
+demographic View:
+![demographic-view](/assets/demograph-overview.png)
 
 Tech View:
 ![tech-view](/assets/tech-overview.png)
 
 In events section you can see the general download traker and different
 naming versions of resume download. Current is called "resume_download_github".
+
+Note: This is a Event screen placeholder in case the database does not update
+before the deadline. More about this in upper section called "Problems"
 
 Event View:
 ![event-view](/assets/event-overview.png)
