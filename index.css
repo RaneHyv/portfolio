@@ -1,10 +1,5 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
 html, body {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -379,7 +374,7 @@ a.socialIcon:hover, .socialHoverClass {
   max-width: 50rem;
 }
 
-.h3 {
+.certification-container h3 {
   margin-top: 0.75rem;
   font-size: 1.5rem;
   margin-left: auto;
