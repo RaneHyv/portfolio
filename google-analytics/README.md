@@ -138,7 +138,7 @@ Everything shows up in Google Analytics page and resume downloads have specific
 event to show download numbers.
 
 Demographic View:
-![demographic-view](/assets/demograph-overview.png)
+![demographic-view](/assets/demographic-view.png)
 
 Tech View:
 ![tech-view](/assets/tech-overview.png)
@@ -151,5 +151,4 @@ Event View:
 ![event-view](/assets/events-overview.png)
 
 System Overview:
-
 ![system-overview](/assets/system-overview.jpg)
