@@ -88,14 +88,19 @@ Triggers:
 
 ### Google Analytics View Unique Users
 There was information about how many times was resume downloaded but there was
-no smart way to see how many people downloaded.
+no smart way to see how many people downloaded without going to details of the
+"resume_download_github" event.
+
+![resume-download-details](/assets/resume-download-details.png)
 
 To solve this problem I went to Google Analytics Audience section to create
 custom audience of people that triggered/are part of "resume_download_github"
 event. This way you can see and compare data to all users or something else.
 Other thing I added was a event trigger "unique_resume_download_github" that
-triggers if new user is added to audience it.This allows user to see unique
-users that downloaded the resume in real time and in event reports.
+triggers if new user is added to audience it. This allows admin/operative to see
+unique users that downloaded the resume in real time and in event reports with a
+glance. To top that off you can use this audience to retarget ads if needed or
+some other specific actions.
 
 ![audience-creation](/assets/audience-creation.png)
 
@@ -132,7 +137,7 @@ considering project length is 5 days and one of them is planning...
 Everything shows up in Google Analytics page and resume downloads have specific
 event to show download numbers.
 
-demographic View:
+Demographic View:
 ![demographic-view](/assets/demograph-overview.png)
 
 Tech View:
@@ -141,11 +146,10 @@ Tech View:
 In events section you can see the general download traker and different
 naming versions of resume download. Current is called "resume_download_github".
 
-Note: This is a Event screen placeholder in case the database does not update
-before the deadline. More about this in upper section called "Problems"
 
 Event View:
-![event-view](/assets/event-overview.png)
+![event-view](/assets/events-overview.png)
 
 System Overview:
+
 ![system-overview](/assets/system-overview.jpg)
