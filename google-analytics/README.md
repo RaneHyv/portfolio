@@ -151,4 +151,5 @@ Event View:
 ![event-view](/assets/events-overview.png)
 
 System Overview:
+
 ![system-overview](/assets/system-overview.jpg)
