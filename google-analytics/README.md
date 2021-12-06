@@ -1,5 +1,20 @@
 # Google Analytics
 
+## Table of Contents
+1. [Task](#task)
+2. [Plan](#plan)
+    1. [Details](#details)
+    2. [Google Analytics Setup](#google-analytics-setup)
+    3. [Website Download Section](#website-download-section)
+3. [Implementation](#implementation)
+    1. [Website Download Section](#website-download-section-1)
+    2. [Google Analytics Setup](#google-analytics-setup-1)
+    3. [Tag Manager Setup](#tag-manager-setup)
+    4. [Google Analytics View Unique Users](#google-analytics-view-unique-users)
+4. [Problems](#problems)
+5. [Finished Job / TL;DR](#finished-job--tldr)
+
+
 ## Task
 Install Google Analytics tracking to page and track how many people have
 downloaded the resume and build the resume download section.
